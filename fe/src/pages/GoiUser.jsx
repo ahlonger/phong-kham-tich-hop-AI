@@ -5,6 +5,7 @@ import ThanhToan from "./ThanhToan";
 import { useLocation } from "react-router-dom";
 import bannerImage from "../assets/banner.jpg";
 import { FaCheckCircle } from "react-icons/fa";
+import bannerImggoi from "../assets/bannerdichvu.jpg";
 
 const GoiUser = () => {
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
@@ -52,6 +53,7 @@ const GoiUser = () => {
   return (
     <>
       <Navbar />
+      <img src={bannerImggoi} alt="Banner" className="w-full mt-16 h-[500px] object-cover" />
       <section className="max-w-7xl mx-auto p-4 md:p-10 mt-20 md:mt-28 text-center bg-gray-50 rounded-xl shadow">
         <h2 className="text-2xl md:text-3xl font-bold text-[#0077cc] mb-8">
           Gói dịch vụ nổi bật
@@ -94,21 +96,28 @@ const GoiUser = () => {
         </div>
       </section>
 
-      <div className="flex justify-center">
-      <ul className="space-y-4 text-gray-700 text-base ">
-        {[
-          "Tiết kiệm chi phí so với khám lẻ từng lần.",
-          "Ưu tiên lịch hẹn và được chăm sóc bởi đội ngũ bác sĩ giàu kinh nghiệm.",
-          "Hưởng nhiều khuyến mãi và dịch vụ kèm theo.",
-          "Thời hạn dài – linh hoạt trong sử dụng.",
-          "Hỗ trợ trả góp không lãi suất cho các gói lớn.",
-        ].map((item, i) => (
-          <li key={i} className="flex items-start gap-3">
-            <FaCheckCircle className="text-green-500 mt-1" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
+      <div className="max-w-7xl mx-auto p-4 md:p-10 mt-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#0077cc] mb-8 text-center">Lợi ích khi sử dụng gói dịch vụ</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            "Tiết kiệm chi phí so với khám lẻ từng lần.",
+            "Ưu tiên lịch hẹn và được chăm sóc bởi đội ngũ bác sĩ giàu kinh nghiệm.",
+            "Hưởng nhiều khuyến mãi và dịch vụ kèm theo.",
+            "Thời hạn dài – linh hoạt trong sử dụng.",
+            "Hỗ trợ trả góp không lãi suất cho các gói lớn.",
+            "Được bảo hành và hỗ trợ sau điều trị.",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100"
+            >
+              <div className="flex items-center gap-4">
+                <FaCheckCircle className="text-green-500 text-2xl" />
+                <p className="text-lg text-gray-700 leading-relaxed">{item}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
 <section className="max-w-xl mx-auto mt-16 bg-white p-8 rounded-xl shadow text-left">

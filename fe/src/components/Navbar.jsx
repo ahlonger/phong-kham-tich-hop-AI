@@ -49,7 +49,7 @@ const Navbar = () => {
             e.target.src = require("../assets/default-avatar.png"); //  dùng ảnh dự phòng local
           }}
           />
-          PHÒNG KHÁM GWOUTH
+          PHÒNG KHÁM ĐA KHOA SMART HEALTH
         </div>
 
         {/* Nav ở giữa - chỉ desktop */}

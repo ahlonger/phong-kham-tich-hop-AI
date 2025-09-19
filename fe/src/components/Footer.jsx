@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="bg-[#0077cc] text-white pt-10 mt-10">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-xl font-semibold mb-2">PHÒNG KHÁM GWOUTH</h3>
-          <p className="mb-2">PHÒNG KHÁM AHLONG – Trao nụ cười, gửi niềm tin!</p>
+          <h3 className="text-xl font-semibold mb-2">Phòng khám Smart Health</h3>
+          <p className="mb-2">Phòngg khám Smart Health – Trao nụ cười, gửi niềm tin!</p>
           <p>Chăm sóc sức khỏe toàn diện với đội ngũ bác sĩ chuyên nghiệp và công nghệ hiện đại.</p>
         </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm border-t border-white/30 mt-6 py-4">
-        &copy; 2025 PHÒNG KHÁM GWOUTH. All rights reserved.
+        &copy; 2025 Phòng khám Smart Health. All rights reserved.
       </div>
     </footer>
   );
